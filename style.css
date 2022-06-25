@@ -1,0 +1,146 @@
+* {
+   
+    font-family: 'Segoe UI Light', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #000000f2;
+}
+
+/* nav style*/
+nav {
+    display: flex;
+    position: fixed;
+    z-index: 999;
+    
+    
+}
+nav button{
+    border-style: none;
+    background-color: transparent;
+    
+}
+
+.nav-icon {
+    text-align: center;
+    padding: 20px 10px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    color: black;
+    justify-content: space-between;
+    align-items: center;
+    width: fit-content;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.nav-body {
+  
+padding: 5px 5px 30px;
+    width: 240px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    
+}
+
+.nav-body ul li {
+    list-style: none;
+   
+}
+
+.nav-body  a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+.nav-body  a:hover {
+    color: #A72C23
+}
+.nav-social-item{
+    padding: 10px;
+}
+.nav-social-item a{
+    padding: 5px;
+}
+.nav-left{
+   left:-240px;
+}
+.nav-tab-menu   {
+    margin-top: 20px;
+overflow:hidden ;
+height: 500px;
+}
+.nav-tab-menu ul li  {
+padding-top: 25px;
+}
+
+.animation{
+    animation-name: mymove;
+    animation-duration: 2s;
+    
+   
+}
+@keyframes mymove {
+    from {padding-top: 500px; 
+        opacity: 0;}
+    to {opacity: 1; padding-top: 25;}
+  }
+
+  /*  end nav style*/
+.main{
+    padding: 20px;
+    position: relative;
+    margin: auto;
+    width: 80%;
+    left: 38px   
+}
+  .form-control {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255,255,255,.7);
+    border-radius: 0;
+    color: #fff;
+    font-weight: 800;
+}
+input {background-color: transparent !important}
+.text-light {
+    color: #f8f9fa!important;
+}
+.form-group {
+    margin-bottom: 1rem;
+}
+.alert {
+    display: none;
+}
+.alert {
+    position: relative;
+    padding: 0.75rem 1.25rem;
+    margin: 1rem 0;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+}
+.movie {
+  overflow: hidden;  
+}
+.layer {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(255,255,255,.7);
+    text-align: center;
+    color: #000;
+    font-weight: 800;
+    transition: all 1s;
+}
+.movie:hover .layer {
+    top: 0;
+}
